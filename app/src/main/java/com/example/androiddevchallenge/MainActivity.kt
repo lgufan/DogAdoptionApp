@@ -63,7 +63,6 @@ class MainActivity : AppCompatActivity() {
             }
         )
     }
-
 }
 
 val dogList = listOf(
@@ -91,9 +90,6 @@ fun MyApp(
     dogList: List<Dog>,
     onItemClick: (Dog) -> Unit
 ) {
-
-
-//    val image = imageResource(R.drawable.header)
 
     Surface(color = MaterialTheme.colors.background) {
 
