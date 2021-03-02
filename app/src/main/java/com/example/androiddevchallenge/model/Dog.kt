@@ -5,8 +5,8 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Dog(
-    val head:Int = 0,
-    val name:String = "",
-    val kind:String = "",
-    val age:String = ""
-):Parcelable
+    val head: Int = 0,
+    val name: String = "",
+    val kind: String = "",
+    val age: String = ""
+) : Parcelable

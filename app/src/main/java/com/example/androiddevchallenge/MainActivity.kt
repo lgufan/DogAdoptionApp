@@ -83,12 +83,14 @@ val dogList = listOf(
         name = "二傻",
         kind = "哈士奇",
         age = "1岁"
-    ), Dog(
+    ),
+    Dog(
         head = R.drawable.dog_two,
         name = "大傻",
         kind = "阿拉斯加犬",
         age = "2岁"
-    ), Dog(
+    ),
+    Dog(
         head = R.drawable.dog_three,
         name = "三傻",
         kind = "萨摩耶",
@@ -108,17 +110,20 @@ fun MyApp(
         if (dogList.isNullOrEmpty()) {
             Text(text = "没有数据")
         } else {
-            LazyColumn(modifier = Modifier
-                .fillMaxSize()
-                .padding(16.dp),
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(10.dp),
                 content = {
                     items(dogList) { dog ->
-                        Row(modifier = Modifier
-                            .fillMaxWidth()
-                            .clickable {
-                                onItemClick(dog)
-                            }) {
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable {
+                                    onItemClick(dog)
+                                }
+                        ) {
                             Image(
                                 modifier = Modifier
                                     .size(100.dp)
@@ -145,9 +150,9 @@ fun MyApp(
                             }
                         }
                     }
-                })
+                }
+            )
         }
-
     }
 }
 
